@@ -33,7 +33,7 @@ The CNN sub-network receives 2D MRIs and mainly consists of a pre-trained model 
 Many pre-trained models were used including `ResNet50`, `ResNet50V2`, `VGG-16`, `VGG-19`, `InceptionV3` and `DenseNet121`, in order to identify the most suitable model among them for extracting features from the MRIs. 
 At the same time, the ANN sub-network receives as input 20 metadata of the corresponding MRIs, and lastly all features from both networks are concatenated and used in the final ANN network that performs the classification. More details are given below:
 
-- **Training Strategy**: `5-Fold Cross-Validation` with `train-val-test spliting` at `subject level` to avoid `data leakage`
+- **Training Strategy**: `5-Fold Cross-Validation` with `train-val-test spliting` at subject level to avoid data leakage
 - **Loss function**: `Binary Crossentropy` for binary classification, `Sparse Categorical Crossentropy` for multi-class classification
 - **Optimizer**: `SGD with Nesterov Momentum`
 - **Evaluation Metrics**: `Accuracy`, `Precision`, `Recall`, `F1-score` (used mainly due to data imbalance)
