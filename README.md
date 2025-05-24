@@ -53,6 +53,7 @@ FSLeyes==1.11.0
 * `DataCleaning`: Contains the scripts used for merging and cleaning the metadata, resulting in csv file used for training the model.
 * `PrepareMRIs`: Contains the scripts used for extracting, preprocessing and labeling the MRIs.
 * `Model`: Contains the scripts used for configuring and training the model.
+* `Details.md`: Contains a brief outline of the preprocessing used for the MRIs, the training of the model and lastly the results.
 
 ## License
 This project is licensed under the terms of the Apache-2.0 license.
