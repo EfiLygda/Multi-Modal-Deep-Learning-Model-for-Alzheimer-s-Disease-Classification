@@ -51,6 +51,9 @@ FSLeyes==1.11.0
 In this work the normalized collection `ADNI1:Complete 1Yr 1.5T` is used which includes 2294 1.5T MRI scans.
 Moreover, the current model uses axial orthogonal brain slices, accompanied by metadata useful for disease detection that including `diagnosis`, `age`, Mini-Mental State Examination (`MMSE`), Clinical Dementia Rating (`CDR`), regional brain volumes (`ROIs`), `biomarkers`, and `neuropsychological summary scores`.
 
+> [!NOTE] 
+> This repository does not include the ADNI data. Access requires registration and approval at https://adni.loni.usc.edu/.
+
 ### Metadata Preprocessing
 In the case of the metadata, features such as ROI volumes were preprocessed to remove scale differences via standardization, while the ratio of biomarker data, which is often used as an indication of the existence of the disease, was calculated.
  
@@ -66,10 +69,6 @@ After extracting 2D orthogonal axial slices, additional preprocessing was applie
 </p>
 
 
-> [!NOTE] 
-> This repository does not include the ADNI data. Access requires registration and approval at https://adni.loni.usc.edu/.
-
-
 
 ## Model Architecture
 **TLDR**: Parallel branches for 2D MRI (`CNN`) and metadata (`ANN`)
@@ -82,10 +81,13 @@ At the same time, the ANN sub-network receives as input 20 metadata of the corre
 - **Optimizer**: `SGD with Nesterov Momentum`
 - **Evaluation Metrics**: `Accuracy, Precision, Recall, F1-score`
 
-
 ![](./Images/Model.PNG)
 
+
+
 ## Repository Structure
+
+* `DataCleaning`
 
 ## How to Run
 **TODO:** Instructions for running the project will be added soon.
