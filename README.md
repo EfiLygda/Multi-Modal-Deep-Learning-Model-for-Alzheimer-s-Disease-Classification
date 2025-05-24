@@ -104,16 +104,20 @@ The best performance is found to be for distinguishing between the `CN` and `AD`
 Among the pretrained models `InceptionV3` is found to have the best average performance for the `CN vs MCI vs AD` and `CN vs AD` models, while for `CN vs MCI` and `MCI vs AD` models `DenseNet121` and `ResNet50V2`, respectively.
 
 ### Accuracies
-
+![](./Images/Accuracies.PNG)
 
 ### CN vs MCI vs AD
 ![](./Images/CNvsMCIvsAD.PNG)
 
 ### CN vs AD
+![](./Images/CNvsAD.PNG)
 
 ### CN vs MCI
+![](./Images/CNvsMCI.PNG)
 
 ### MCI vs AD
+![](./Images/MCIvsAD.PNG)
+
 
 ## Acknowledgments
 
