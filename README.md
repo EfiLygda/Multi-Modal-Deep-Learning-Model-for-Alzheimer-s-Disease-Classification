@@ -79,7 +79,7 @@ At the same time, the ANN sub-network receives as input 20 metadata of the corre
 
 - **Loss function**: `Binary Crossentropy` for binary classification, 'Sparse Categorical Crossentropy' for multi-class classification
 - **Optimizer**: `SGD with Nesterov Momentum`
-- **Evaluation Metrics**: `Accuracy, Precision, Recall, F1-score`
+- **Evaluation Metrics**: `Accuracy`, `Precision`, `Recall`, `F1-score` (used mainly due to data imbalance)
 
 ![](./Images/Model.PNG)
 
@@ -87,12 +87,24 @@ At the same time, the ANN sub-network receives as input 20 metadata of the corre
 
 ## Repository Structure
 
-* `DataCleaning`
+* `csv`: Should contain the tables from ADNI containg the MRI metadata.
+* `Images`: Contains the images used in the ReadMe.md file
+* `DataCleaning`: Contains the scripts used for merging and cleaning the metadata, resulting in csv file used for training the model.
+* `PrepareMRIs`: Contains the scripts used for extracting, preprocessing and labeling the MRIs.
+* `Model`: Contains the scripts used for configuring and training the model.
+
 
 ## How to Run
 **TODO:** Instructions for running the project will be added soon.
 
 ## Results
+
+The best performance is found to be for distinguishing between the `CN` and `AD` groups, while at the same time a decrease in performance was observed in models in which observations of the `MCI` group are used.
+Among the pretrained models `InceptionV3` is found to have the best average performance for the `CN vs MCI vs AD` and `CN vs AD` models, while for `CN vs MCI` and `MCI vs AD` models `DenseNet121` and `ResNet50V2`, respectively.
+
+### CN vs MCI vs AD
+
+![](./Images/CN vs MCI vs AD.PNG)
 
 ## Acknowledgments
 
