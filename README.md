@@ -57,7 +57,7 @@ In the case of the metadata, features such as ROI volumes were preprocessed to r
 ### MRI Preprocessing
 Before extracting the axial slices from the MRI scans, a series of processing methods were applied with the main goals of spatial normalization and removal of the skull and tissues, which were are not necessary in the current study.
 
-![/Images/3D_Preprocessing.PNG]
+![./Images/3D_Preprocessing.PNG]
 
 
 > [!NOTE] 
