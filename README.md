@@ -11,6 +11,9 @@ Then, the architecture of the model was evaluated based on its ability to distin
 Finally, the best performance is found to be for distinguishing between the `CN` and `AD` groups, while at the same time a decrease in performance was observed in models in which observations of the `MCI` group are used.
 Among the pretrained models `InceptionV3` is found to have the best average performance for the `CN vs MCI vs AD` and `CN vs AD` models, while for `CN vs MCI` and `MCI vs AD` models `DenseNet121` and `ResNet50V2`, respectively.
 
+[!NOTE] 
+This repository does not include the ADNI data. Access requires registration and approval at adni.loni.usc.edu.
+
 ## Requirements
 
 ```
