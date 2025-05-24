@@ -119,7 +119,8 @@ Among the pretrained models `InceptionV3` is found to have the best average perf
 ![](./Images/MCIvsAD.PNG)
 
 
-## Acknowledgments
+## License
+This project is licensed under the terms of the Apache-2.0 license.
 
 ## Status
 > Done
