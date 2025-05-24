@@ -10,3 +10,34 @@ Specifically, the first sub-network extracts features from the axial slices, usi
 Then, the architecture of the model was evaluated based on its ability to distinguish between all three diagnostic groups, as well as their two-by-two combinations, as well as the performance of the 6 pre-trained CNN models. 
 Finally, the best performance is found to be for distinguishing between the `CN` and `AD` groups, while at the same time a decrease in performance was observed in models in which observations of the `MCI` group are used.
 Among the pretrained models `InceptionV3` is found to have the best average performance for the `CN vs MCI vs AD` and `CN vs AD` models, while for `CN vs MCI` and `MCI vs AD` models `DenseNet121` and `ResNet50V2`, respectively.
+
+## Requirements
+
+python==3.8.18
+
+numpy==1.19.5
+
+pandas==1.3.4
+
+scikit-learn==1.3.2
+
+tensorflow==2.3.0
+
+matplotlib==3.5.1
+
+opencv-python==4.8.1.78
+
+scikit-image==0.19.3
+
+nibabel==5.1.0
+
+tqdm==4.66.1
+
+## Repository Structure
+
+## Details
+
+## Results
+
+## Status
+> Done
