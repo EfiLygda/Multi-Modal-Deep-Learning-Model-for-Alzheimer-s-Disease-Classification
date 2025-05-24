@@ -72,8 +72,16 @@ After extracting 2D orthogonal axial slices, additional preprocessing was applie
 
 
 ## Model Architecture
-**TLDR**: parallel branches for 2D MRI and metadata
-Loss function, optimizer, evaluation metrics
+**TLDR**: Parallel branches for 2D MRI (`CNN`) and metadata (`ANN`)
+
+The CNN sub-network receives 2D MRIs and mainly consists of a pre-trained model used for transfer learning, that extracts the same ammount of features as the ANN sub-network.
+Many pre-trained models were used including `ResNet50`, `ResNet50V2`, `VGG-16`, `VGG-19`, `InceptionV3` and `DenseNet121`, in order to identify the most suitable model among them for extracting features from the MRIs. 
+At the same time, the ANN sub-network receives as input 20 metadata of the corresponding MRIs, and lastly all features from both networks are concatenated and used in the final ANN network that performs the classification. More details are given below:
+
+- **Loss function**: `Binary Crossentropy` for binary classification, 'Sparse Categorical Crossentropy' for multi-class classification
+- **Optimizer**: `SGD with Nesterov Momentum`
+- **Evaluation Metrics**: `Accuracy, Precision, Recall, F1-score`
+
 
 ![](./Images/Model.PNG)
 
