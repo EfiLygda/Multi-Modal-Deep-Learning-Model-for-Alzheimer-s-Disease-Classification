@@ -56,7 +56,7 @@ FSLeyes==1.11.0
 * `Details.md`: Contains a brief outline of the preprocessing used for the MRIs, the training of the model and lastly the results.
 
 ## License
-This project is licensed under the terms of the Apache-2.0 license.
+This project is licensed under the terms of the `Apache-2.0 license`.
 
 ## Status
 > Done
