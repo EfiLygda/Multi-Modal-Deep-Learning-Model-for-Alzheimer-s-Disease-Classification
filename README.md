@@ -13,25 +13,18 @@ Among the pretrained models `InceptionV3` is found to have the best average perf
 
 ## Requirements
 
+```
 python==3.8.18
-
 numpy==1.19.5
-
 pandas==1.3.4
-
 scikit-learn==1.3.2
-
 tensorflow==2.3.0
-
 matplotlib==3.5.1
-
 opencv-python==4.8.1.78
-
 scikit-image==0.19.3
-
 nibabel==5.1.0
-
 tqdm==4.66.1
+```
 
 ## Repository Structure
 
