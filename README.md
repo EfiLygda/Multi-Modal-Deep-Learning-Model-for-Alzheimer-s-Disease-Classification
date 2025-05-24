@@ -62,7 +62,7 @@ Before extracting the axial slices from the MRI scans, a series of processing me
 After extracting 2D orthogonal axial slices, additional preprocessing was applied with the primary goal of reducing noise, as is shown in the image below:
 
 <p align="center">
-  <img src="./Images/3D_Preprocessing.PNG" alt="Description"/>
+  <img src="./Images/2D_Preprocessing.PNG" alt="Description"/>
 </p>
 
 
