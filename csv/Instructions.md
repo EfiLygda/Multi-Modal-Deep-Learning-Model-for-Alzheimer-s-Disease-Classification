@@ -3,7 +3,8 @@
 This folder should contain the csv files from the ADNI database which contains the metadata of the MRIs.
 
 List of the most commonly used tables from ADNI in:
-[https://adni.loni.usc.edu/wp-content/uploads/2008/07/inst_commonly_used_table.pdf]
+
+https://adni.loni.usc.edu/wp-content/uploads/2008/07/inst_commonly_used_table.pdf
 
 ## Tables used
 ```
