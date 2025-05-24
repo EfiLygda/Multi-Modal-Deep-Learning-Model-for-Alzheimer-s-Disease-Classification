@@ -59,21 +59,21 @@ Before extracting the axial slices from the MRI scans, a series of processing me
 
 ![](./Images/3D_Preprocessing.PNG)
 
+After extracting 2D orthogonal axial slices, additional preprocessing was applied with the primary goal of reducing noise, as is shown in the image below:
+
+![](./Images/2D_Preprocessing.PNG)
+
 
 > [!NOTE] 
 > This repository does not include the ADNI data. Access requires registration and approval at https://adni.loni.usc.edu/.
 
-
-Source: 
-
-Preprocessing steps: [Brief description or mention of preprocessing script]
 
 
 ## Model Architecture
 **TLDR**: parallel branches for 2D MRI and metadata
 Loss function, optimizer, evaluation metrics
 
-/Images/Model.PNG
+![](./Images/Model.PNG)
 
 ## Repository Structure
 
