@@ -16,6 +16,7 @@ Among the pretrained models `InceptionV3` is found to have the best average perf
 
 ## Requirements
 
+### Python Requirements
 ```
 python==3.8.18
 numpy==1.19.5
@@ -29,11 +30,59 @@ nibabel==5.1.0
 tqdm==4.66.1
 ```
 
+### Cuda Requirements
+```
+Cuda==10.1.243
+cuDNN==7.6.0.64
+```
+
+### Linux System Requirements (WSL) Requirements
+```
+ANTs==2.5.0.post14-gfe3a0e3
+FSL==6.0.7.3
+FSLeyes==1.11.0
+```
+
+
+## Dataset
+
+**TLDR**: Modalities used: 2D Axial MRIs extracted from 3D 1.5T MRIs, associated clinical metadata
+
+In this work the normalized collection `ADNI1:Complete 1Yr 1.5T` is used which includes 2294 1.5T MRI scans.
+Moreover, the current model uses axial orthogonal brain slices, accompanied by metadata useful for disease detection that including `diagnosis`, `age`, Mini-Mental State Examination (`MMSE`), Clinical Dementia Rating (`CDR`), regional brain volumes (`ROIs`), `biomarkers`, and `neuropsychological summary scores`.
+
+### Metadata Preprocessing
+In the case of the metadata, features such as ROI volumes were preprocessed to remove scale differences via standardization, while the ratio of biomarker data, which is often used as an indication of the existence of the disease, was calculated.
+ 
+### MRI Preprocessing
+Before extracting the axial slices from the MRI scans, a series of processing methods were applied with the main goals of spatial normalization and removal of the skull and tissues, which were are not necessary in the current study.
+
+/Images/3D_Preprocessing.PNG
+
+
+> [!NOTE] 
+> This repository does not include the ADNI data. Access requires registration and approval at https://adni.loni.usc.edu/.
+
+
+Source: 
+
+Preprocessing steps: [Brief description or mention of preprocessing script]
+
+
+## Model Architecture
+**TLDR**: parallel branches for 2D MRI and metadata
+Loss function, optimizer, evaluation metrics
+
+/Images/Model.PNG
+
 ## Repository Structure
 
-## Details
+## How to Run
+**TODO:** Instructions for running the project will be added soon.
 
 ## Results
+
+## Acknowledgments
 
 ## Status
 > Done
