@@ -77,7 +77,8 @@ The CNN sub-network receives 2D MRIs and mainly consists of a pre-trained model 
 Many pre-trained models were used including `ResNet50`, `ResNet50V2`, `VGG-16`, `VGG-19`, `InceptionV3` and `DenseNet121`, in order to identify the most suitable model among them for extracting features from the MRIs. 
 At the same time, the ANN sub-network receives as input 20 metadata of the corresponding MRIs, and lastly all features from both networks are concatenated and used in the final ANN network that performs the classification. More details are given below:
 
-- **Loss function**: `Binary Crossentropy` for binary classification, 'Sparse Categorical Crossentropy' for multi-class classification
+- **Training Strategy**: `5-Fold CV` with `train-val-test spliting`
+- **Loss function**: `Binary Crossentropy` for binary classification, `Sparse Categorical Crossentropy` for multi-class classification
 - **Optimizer**: `SGD with Nesterov Momentum`
 - **Evaluation Metrics**: `Accuracy`, `Precision`, `Recall`, `F1-score` (used mainly due to data imbalance)
 
@@ -102,9 +103,17 @@ At the same time, the ANN sub-network receives as input 20 metadata of the corre
 The best performance is found to be for distinguishing between the `CN` and `AD` groups, while at the same time a decrease in performance was observed in models in which observations of the `MCI` group are used.
 Among the pretrained models `InceptionV3` is found to have the best average performance for the `CN vs MCI vs AD` and `CN vs AD` models, while for `CN vs MCI` and `MCI vs AD` models `DenseNet121` and `ResNet50V2`, respectively.
 
-### CN vs MCI vs AD
+### Accuracies
 
-![](./Images/CN vs MCI vs AD.PNG)
+
+### CN vs MCI vs AD
+![](./Images/CNvsMCIvsAD.PNG)
+
+### CN vs AD
+
+### CN vs MCI
+
+### MCI vs AD
 
 ## Acknowledgments
 
