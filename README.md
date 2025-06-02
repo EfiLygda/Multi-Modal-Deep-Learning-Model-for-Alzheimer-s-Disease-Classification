@@ -39,7 +39,7 @@ Cuda==10.1.243
 cuDNN==7.6.0.64
 ```
 
-### Linux System Requirements (WSL) Requirements
+### Linux System Requirements (WSL)
 ```
 ANTs==2.5.0.post14-gfe3a0e3
 FSL==6.0.7.3
